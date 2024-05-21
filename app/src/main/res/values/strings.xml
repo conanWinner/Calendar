@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Calendar</string>
+
+    <string name="back">Back</string>
+
+    <!-- Export Dialog -->
+    <string name="export_dialog_title">Export Calendar</string>
+    <string name="export_dialog_export">Export</string>
+    <string name="export_dialog_choose_location">Set Location</string>
+
+    <!-- Export Dialog -->
+    <string name="import_dialog_title">Import Calendar</string>
+    <string name="import_dialog_import">Import</string>
+
+    <!-- Calendar Month Screen -->
+    <string name="calendar_next_month">Next Month</string>
+    <string name="calendar_previous_month">Previous Month</string>
+    <string name="calendar_export">Export Calendar</string>
+    <string name="calendar_import">Import Calendar</string>
+    <string name="calendar_return_to_date">Return to date</string>
+
+    <!-- Create Event Screen -->
+    <string name="create_event_title">New Event</string>
+    <string name="create_event_label_title">Title</string>
+    <string name="create_event_label_description">Description</string>
+    <string name="create_event_add_event">Add Event</string>
+    <string name="create_event_description_date">Select Date</string>
+    <string name="create_event_description_time">Select Time</string>
+
+    <!-- Events -->
+    <string name="event_add">Add Event</string>
+    <string name="event_delete">Delete Event</string>
+
+    <!-- Time Picker -->
+    <string name="time_picker_title">Select Time</string>
+</resources>
