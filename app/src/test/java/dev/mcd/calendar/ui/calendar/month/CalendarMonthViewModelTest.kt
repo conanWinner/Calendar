@@ -1,5 +1,6 @@
 package dev.mcd.calendar.ui.calendar.month
 
+import dev.mcd.calendar.feature.presentation.calendar.month.CalendarMonthViewModel
 import dev.mcd.calendar.feature.calendar.domain.GetEventCountsForDates
 import dev.mcd.calendar.feature.calendar.domain.GetMonthDays
 import io.kotest.matchers.nulls.shouldNotBeNull

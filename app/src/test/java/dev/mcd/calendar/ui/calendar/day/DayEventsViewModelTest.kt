@@ -1,10 +1,11 @@
 package dev.mcd.calendar.ui.calendar.day
 
 import androidx.lifecycle.SavedStateHandle
+import dev.mcd.calendar.feature.presentation.calendar.day.DayEventsViewModel
 import dev.mcd.calendar.feature.calendar.domain.EventsRepository
 import dev.mcd.calendar.feature.calendar.domain.entity.Event
-import dev.mcd.calendar.ui.calendar.day.DayEventsViewModel.SideEffect.NavigateCreateEvent
-import dev.mcd.calendar.ui.routing.navArg
+import dev.mcd.calendar.feature.presentation.calendar.day.DayEventsViewModel.SideEffect.NavigateCreateEvent
+import dev.mcd.calendar.feature.presentation.routing.navArg
 import io.kotest.matchers.shouldBe
 import io.mockk.Runs
 import io.mockk.coEvery

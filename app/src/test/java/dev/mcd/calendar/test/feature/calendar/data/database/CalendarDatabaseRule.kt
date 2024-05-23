@@ -1,8 +1,8 @@
 package dev.mcd.calendar.test.feature.calendar.data.database
 
 import androidx.room.Room
-import dev.mcd.calendar.feature.calendar.data.dao.Events
-import dev.mcd.calendar.feature.calendar.data.database.CalendarDatabase
+import dev.mcd.calendar.feature.calendar.data.data_source.dao.Events
+import dev.mcd.calendar.feature.calendar.data.data_source.database.CalendarDatabase
 import org.junit.rules.TestRule
 import org.junit.runner.Description
 import org.junit.runners.model.Statement

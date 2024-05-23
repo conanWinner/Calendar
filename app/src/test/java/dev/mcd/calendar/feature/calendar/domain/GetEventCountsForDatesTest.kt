@@ -1,7 +1,7 @@
 package dev.mcd.calendar.feature.calendar.domain
 
-import dev.mcd.calendar.feature.calendar.data.EventsRepositoryImpl
-import dev.mcd.calendar.feature.calendar.data.mapper.EventEntityMapper
+import dev.mcd.calendar.feature.calendar.data.data_source.EventsRepositoryImpl
+import dev.mcd.calendar.feature.calendar.data.data_source.mapper.EventEntityMapper
 import dev.mcd.calendar.test.feature.calendar.data.database.calendarDatabaseRule
 import io.kotest.matchers.shouldBe
 import kotlinx.coroutines.CoroutineDispatcher
@@ -31,7 +31,7 @@ class GetEventCountsForDatesTest {
         repository = EventsRepositoryImpl(
             events = databaseRule.database.events(),
             mapper = EventEntityMapper(),
-            dispatcher = testScope.coroutineContext[CoroutineDispatcher.Key]!!,
+            dispatcher = testScope.coroutineContext[CoroutineDispatcher]!!,
         )
         getEventCountsForDates = GetEventCountsForDates(repository)
     }
