@@ -1,7 +1,8 @@
 package dev.mcd.calendar.feature.calendar.data
 
-import dev.mcd.calendar.feature.calendar.data.dao.Events
-import dev.mcd.calendar.feature.calendar.data.mapper.EventEntityMapper
+import dev.mcd.calendar.feature.calendar.data.data_source.EventsRepositoryImpl
+import dev.mcd.calendar.feature.calendar.data.data_source.dao.Events
+import dev.mcd.calendar.feature.calendar.data.data_source.mapper.EventEntityMapper
 import dev.mcd.calendar.test.feature.calendar.data.database.calendarDatabaseRule
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.matchers.shouldBe
@@ -33,7 +34,7 @@ class EventsRepositoryImplTest {
         repository = EventsRepositoryImpl(
             events = events,
             mapper = mapper,
-            dispatcher = testScope.coroutineContext[CoroutineDispatcher.Key]!!,
+            dispatcher = testScope.coroutineContext[CoroutineDispatcher]!!,
         )
     }
 

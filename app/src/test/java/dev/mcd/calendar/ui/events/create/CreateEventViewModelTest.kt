@@ -2,8 +2,9 @@ package dev.mcd.calendar.ui.events.create
 
 import androidx.lifecycle.SavedStateHandle
 import dev.mcd.calendar.feature.calendar.domain.EventsRepository
-import dev.mcd.calendar.ui.events.create.CreateEventViewModel.SideEffect.NavigateBack
-import dev.mcd.calendar.ui.routing.navArg
+import dev.mcd.calendar.feature.presentation.events.create.CreateEventViewModel
+import dev.mcd.calendar.feature.presentation.events.create.CreateEventViewModel.SideEffect.NavigateBack
+import dev.mcd.calendar.feature.presentation.routing.navArg
 import io.kotest.matchers.shouldBe
 import io.mockk.coEvery
 import io.mockk.coVerify

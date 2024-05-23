@@ -1,6 +1,6 @@
 package dev.mcd.calendar.feature.calendar.data
 
-import dev.mcd.calendar.feature.calendar.data.entity.EventEntity
+import dev.mcd.calendar.feature.calendar.data.data_source.entity.EventEntity
 import dev.mcd.calendar.test.feature.calendar.data.database.calendarDatabaseRule
 import io.kotest.common.runBlocking
 import io.kotest.matchers.shouldBe

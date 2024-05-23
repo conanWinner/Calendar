@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "dev.mcd.calendar"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "dev.mcd.calendar"
